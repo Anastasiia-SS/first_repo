@@ -33,3 +33,16 @@ width = 1.75
 area = length * width
 show = f"With width {width}m and length {length}m of the area is {area}m2"
 print(show)
+
+length = "2.75"
+width = "1.75"
+area = float(length) * float(width)
+show = f"With width {width}m and length {length}m of the area is {area}m2"
+print(show)
+
+name = input("What is your name? ")
+email = input("what is your email? ")
+age = int(input("what is your age? "))
+heught = float(input("What is your height? "))
+is_active_input = input("Бажаєте отримувати повідомлення від сайту? (так або просто натисніть Enter для відмови): ").strip().lower()
+is_active = True if is_active_input == "так" else False
