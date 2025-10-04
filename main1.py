@@ -1,11 +1,12 @@
+num = int(input("Enter a number: "))
 
-
-work_experience = int(input("Enter your full work experience in years: "))
-
-if 1 < work_experience <= 5:
-    developer_type = "Middle"
-elif work_experience <= 1:
-    developer_type = "Junior"
+if num > 0:
+    if num % 2 != 0:
+        result = "Positive odd number"
+    else:
+        result = "Positive even number"
+elif num < 0:
+    result = "Negative number"
 else:
-    developer_type = "Senior"
-print(developer_type)
+    result = "It is zero"
+print(result)
