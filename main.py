@@ -1,12 +1,6 @@
-def discount_price(price, discount):
-    def apply_discount():
-        nonlocal price
-        price = price * (1 - discount)
-        return apply_discount
-    if discount < 0 or discount > 1:
-        raise ValueError("Discount must be between 0 and 1")
+def get_fullname(first_name, last_name, middle_name=''):
+    if middle_name:
+        full_name = f"{first_name} {middle_name} {last_name}"
     else:
-        apply_discount()
-        return price
-    
-print(discount_price(100, 0.1))  # Expected output: 80.0
+        full_name = f"{first_name} {last_name}"
+    return full_name.title()
