@@ -1,8 +1,8 @@
-num = int(input("Enter the integer (0 to 100): "))
-sum = 0
-
-while num > 0:
-    sum += num
-    num -= 1   
-print("Сума всіх чисел:", sum)
+message = "Never argue with stupid people, they will drag you down to their level and then beat you with experience."
+search = "r"
+result = 0
+for r in message:
+    if r == search:
+        result += 1
+print(result)
     
