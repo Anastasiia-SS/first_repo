@@ -1,8 +1,9 @@
-message = "Never argue with stupid people, they will drag you down to their level and then beat you with experience."
-search = "r"
-result = 0
-for r in message:
-    if r == search:
-        result += 1
-print(result)
-    
+pool = 1000
+quantity = int(input("Enter the number of mailings: "))
+try:
+    chunk = pool / quantity
+    chunk = int(chunk)
+    print(f'Each person gets {chunk} units of currency.')
+except ZeroDivisionError:
+    print('Divide by zero completed!')
+
