@@ -1,12 +1,8 @@
-num = int(input("Enter a number: "))
+num = int(input("Enter the integer (0 to 100): "))
+sum = 0
 
-if num > 0:
-    if num % 2 != 0:
-        result = "Positive odd number"
-    else:
-        result = "Positive even number"
-elif num < 0:
-    result = "Negative number"
-else:
-    result = "It is zero"
-print(result)
+while num > 0:
+    sum += num
+    num -= 1   
+print("Сума всіх чисел:", sum)
+    
