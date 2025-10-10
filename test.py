@@ -1,9 +1,5 @@
-def discount_price(price, discount):
-    def apply_discount():
-        nonlocal price
-        price = price * (1 - discount)
-        apply_discount()
-        return price
-print(discount_price(100, 0.2))  # Виведе: 80.0
+import math
 
+r = math.isclose(0.1, 0.10000000008)
+print(r)  # Це поверне True
 
